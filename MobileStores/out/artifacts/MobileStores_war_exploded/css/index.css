@@ -1,0 +1,85 @@
+div{
+    width: 250px;
+    height: 370px;
+    border:1px solid white;
+    margin: auto;
+}
+.divBig{
+    width:246px;
+    height: 200px;
+    background-image: url(1.jpg);
+    background-size: 100% 100%;
+}
+.divOne{
+    width: 42px;
+    height: 42px;
+    border:1px solid white;
+    margin-left: 15px;
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+    top: 225px;
+}
+.imgOne{
+    width: 42px;
+    height: 42px;
+}
+p{
+    padding: 15px;
+    font-size: 18px;
+    color: red;
+    position: relative;
+    top: 40px;
+}
+span{
+    font-size: 18px;
+    background-color: red;
+    color: white;
+}
+.pOne{
+    padding-left:15px;
+    font-size: 10px;
+    color: black;
+    position: relative;
+    top: -10px;
+}
+div:hover{
+    border-color:orange;
+    cursor: pointer;
+}
+.pOne:hover{
+    text-decoration: underline;
+    color: orange;
+}
+.divTwo{
+    width: 246px;
+    height: 30px;
+    background-color: orange;
+    color: white;
+    position: relative;
+    font-size: 12px;
+    top: -190px;
+    border-color:transparent;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+}
+.divBig:hover+#aa+.pOne+.divTwo{
+    display: block;
+}
+
+.divOne:hover+.divOne+.divOne+.divOne+.divBig{
+    background-image:url(/img/1.jpg);
+}
+.divOne+.divOne:hover+.divOne+.divOne+.divBig{
+    background-image:url(/img/2.jpg);
+}
+.divOne+.divOne+.divOne:hover+.divOne+.divBig{
+    background-image:url(/img/3.jpg);
+}
+.divOne+.divOne+.divOne+.divOne:hover+.divBig{
+    background-image:url(/img/4.jpg);
+}
+a{
+    text-decoration:none;
+}
